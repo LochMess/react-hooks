@@ -56,7 +56,7 @@ function Move({current, moves, onClick}) {
 
 function Game() {
   const [current, setCurrent] = useLocalStorageState('current', 0)
-  const [history, setHistory] = useLocalStorageState('history', [
+  const [history, setHistory] = useLocalStorageState('tic-tac-toe:history', [
     Array(9).fill(null),
   ])
   const winner = calculateWinner(history[current])
